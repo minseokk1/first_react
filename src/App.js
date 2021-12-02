@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
     <Container query={this.state.query}>
       <Input 
-        placeholder="테마를 입력하세요"
+        placeholder="테마를 입력해 주세요"
         onKeyPress={this.handleInputKeyPress} // 키가 눌릴 때마다 handleInputKeyPress 발동
       />
       <Content /> 
