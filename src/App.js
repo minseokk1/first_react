@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
+import Content from "./Content";
+// 다른 파일의 컴포넌트를 불러올 때에는 import를 하고 render()함수의 return에 추가하기
 class App extends React.Component {
   state = {
     query: ""
@@ -11,7 +12,8 @@ class App extends React.Component {
       <Input 
         placeholder="테마를 입력하세요"
         onKeyPress={this.handleInputKeyPress} // 키가 눌릴 때마다 handleInputKeyPress 발동
-      ></Input>
+      />
+      <Content /> 
     </Container>
     );
   }
